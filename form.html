@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Google form  	</title>
+	
+	<script>
+		funtion validForm(){
+			if(document.getElementById("txtfirstname").value==""){
+				var firstfilter =/^[a-zA-Z]*$/g;
+					else if(!firstfilter.test(document.getElementById("txtfirstname").value)){
+						alert("Please enter correct format");
+					}
+					else{
+						alert("Please enter first name");
+					}
+			}
+			if(document.getElementById("txtlastname").value==""){
+				var lastfilter =/^[a-zA-Z]*$/g;
+					else if (!lastfilter.test(document.getElementById("txtlastname").value)){
+						alert("Please enter correct format");
+					}
+					else{
+						alert("Please enter last name");
+					}
+			}
+			
+			else if(document.getElementById("txtusername").value==""){
+				alert("Please enter User Name");
+			
+			}	
+			else if(document.getElementById("txtpass").value==""){
+				alert("Please enter Password");
+			}
+			else if(document.getElementById("txtconpass").value==""){
+				alert("Please enter Confirm Password");
+			}
+			else if(document.getElementById("txtdob").value==""){
+				alert("Please enter Date Of Birth");
+				
+			}
+			else{
+				if(document.getElementById("txtmobilenumber").value==""){
+					var filter = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+						if(!filter.test(document.getElementById("txtmobilenumber").value)){
+							alert("please enter correct mobile number");
+						}
+						else
+							alert("success");
+					}
+					else{
+						alert("please enter mobile number");
+					}
+			}
+				
+			else if(document.getElementById(txtemail).value==""){
+				alert("Please enter e-mail");
+			}
+			else{
+				alert("success");
+			}
+			
+		}
+		
+	</script>
+</head>
+	<body>
+		<table>
+		<tr>
+			<td>
+				Firt Name
+			</td>
+			<td>
+				<input type="text" id="txtfirstname" placeholder="First Name"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Last Name
+			</td>
+			<td>
+				<input type="text" id="txtlasttname" placeholder="Last Name"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				User name
+			</td>
+			<td>
+				<input type="text" id="txtusername" placeholder="User Name"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Password
+			</td>
+			<td>
+				<input type="Password" id="txtpass" placeholder="Password"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Confirm Password
+			</td>
+			<td>
+				<input type="Password" id="txtconpass" placeholder="Confirm Password"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Date Of Birth
+			</td>
+			<td>
+				<input type="text" id="txtdob" placeholder="Date Of Birth"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Gender
+			</td>
+			<td>
+				<select>
+					<option>Male</option>
+					<option>Female</option>
+					<option>Other</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Mobile Number
+			</td>
+			<td>
+				<input type="text" id="txtmobilenumber" placeholder="Mobile Number"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Email Id
+			</td>
+			<td>
+				<input type="text" id="txtemail" placeholder="email"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="button" value="submit" onclick="validForm()"/>
+			</td>
+		</tr>
+			</table>
+	</body>
+</html>
+	

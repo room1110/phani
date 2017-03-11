@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<button onclick="mySorting()">click to sort</button>
+		<p id="initial"></p>
+			<script>
+				var colors = ["red", "bleue", "white", "yellow"];
+				document.getElementById("initial").innerHTML = colors;
+				function mySorting() 
+				{
+				colors.sort();
+				document.getElementById("initial").innerHTML = colors;
+				}
+			</script>
+	</body>
+</html>

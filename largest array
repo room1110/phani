@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<h3>largest number in ana array </h3>
+
+		<p id="demo"></p>
+
+			<script>
+				var array = [267, 599, 108];
+				
+				document.getElementById("demo").innerHTML = Math.max.apply(Math, array);
+				
+			</script>
+
+</body>
+</html>
+
+
+
+ 

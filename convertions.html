@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> convertions </title>
+			<script>
+				var convert = function(src,output,from,to){
+					switch(from){
+						case "bin":
+							document.getElementById(output).innerHTML = to === "dec"? binToDec(src) : binToHex(src);
+							break;
+						case "dec":
+							document.getElementById(output).innerHTML = to === "bin"? binToBin(src) : decToHex(src);
+							break;
+						case "hex":
+							document.getElementById(output).innerHTML = to === "bin"? binToBin(src) : hexToDec(src);
+							break;
+						}
+					};
+					var binToDec = function(src){
+						return src;
+					};
+					var binToHex = function(src){
+						return src;
+					};
+					var decToBin = function(src){
+						return src;
+					};
+					var decToHex = function(src){
+						return src;
+					var HexToBin = function(src){
+						return src;
+					};
+					var hexToDec = function(src){
+						return src;
+					};
+				
+			</script>
+	</head>
+	<body>
+		<div>
+			<h2>Binary</h2>
+			<input id="bin"><br/>
+			<button onclick="convert(document.getElementById('bin').value,'binOutput','bin','dec')">Convert to Decimal</button><br/>
+			<span id="binOutput"></span><br/>
+		</div
+	</body>
+</html>
+		
